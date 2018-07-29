@@ -1,21 +1,22 @@
 package weaponData;
 
 public enum DamageType {
-	SLASH(StatusEffect.BLEED),
-	PUNCTURE(StatusEffect.DAMAGE_MINUS),
+
 	IMPACT(StatusEffect.STAGGER),
-	HEAT(StatusEffect.BURN),
+	PUNCTURE(StatusEffect.DAMAGE_MINUS),
+	SLASH(StatusEffect.BLEED),
 	COLD(StatusEffect.SLOWDOWN),
 	ELECTRIC(StatusEffect.STUN),
+	HEAT(StatusEffect.BURN),
 	TOXIN(StatusEffect.POISON),
 	BLAST(StatusEffect.KNOCKDOWN),
-	RADIATION(StatusEffect.FRIENDLY_FIRE),
+	CORROSIVE(StatusEffect.ARMOR_MINUS),
 	GAS(StatusEffect.TOXIN_CLOUD),
 	MAGNETIC(StatusEffect.SHIELD_MINUS),
+	RADIATION(StatusEffect.FRIENDLY_FIRE),
 	VIRAL(StatusEffect.HEALTH_MINUS),
-	CORROSIVE(StatusEffect.ARMOR_MINUS),
-	VOID(StatusEffect.BULLET_ATTRACT),
-	TRUE(null);
+	TRUE(null),
+	VOID(StatusEffect.BULLET_ATTRACT);
 	
 	private StatusEffect status;
 	
