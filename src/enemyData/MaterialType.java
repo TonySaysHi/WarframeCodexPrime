@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import weaponData.DamageType;
 
-public enum ArmorType {
+public enum MaterialType {
 	CLONED_FLESH(new float[] {0.75f,1,1.25f,1,1,1.25f,1,1,1,0.5f,1,1,1.75f,1,0.5f}),
 	FERRITE(new float[] {1,1.5f,0.85f,1,1,1,1.25f,0.75f,1.75f,1,1,1,1,1,1}),
 	ALLOY(new float[] {1,1.15f,0.5f,1.25f,0.5f,1,1,1,1,1,0.5f,1.75f,1,1,1}),
@@ -24,7 +24,7 @@ public enum ArmorType {
 	 */
 	float[] dmgMultiplier;
 	
-	ArmorType(float[] multipliers){
+	MaterialType(float[] multipliers){
 		dmgMultiplier = multipliers;
 	}
 	
