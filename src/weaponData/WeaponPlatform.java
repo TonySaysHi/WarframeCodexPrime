@@ -1,41 +1,31 @@
 package weaponData;
+
 import java.util.ArrayList;
 
-import enemyData.MaterialType;
-import exceptions.MissingMaterialTypeException;
-
-public class WeaponPlatform {
-private String name;
-private ArrayList<Damage> damage;
-
-public WeaponPlatform(String name, ArrayList damage) {
-	super();
-	this.name = name;
-	this.damage = damage;
-}
-
-public String getName() {
-	return name;
-}
-
-public void setName(String name) {
-	this.name = name;
-}
-
-public ArrayList getDamage() {
-	return damage;
-}
-
-public void setDamage(ArrayList damage) {
-	this.damage = damage;
-}
-
-public double CalculateDamage(MaterialType materialType ,MaterialType armorType, double ArmorRating) throws MissingMaterialTypeException {
-	double temp = 0;
-	for(Damage e:damage) {
-		temp += e.damageSimulation(materialType, armorType, ArmorRating);
-	}
-	return temp;
+public class WeaponPlatform extends Weapon{
+	private Weapon slot1;
+	private Weapon slot2;
 	
-}
+	public WeaponPlatform(String name, Weapon slot1, Weapon slot2) {
+		super(name, null);
+		this.slot1 = slot1;
+		this.slot2 = slot2;
+	}
+
+	public Weapon getSlot1() {
+		return slot1;
+	}
+
+	public void setSlot1(Weapon slot1) {
+		this.slot1 = slot1;
+	}
+
+	public Weapon getSlot2() {
+		return slot2;
+	}
+
+	public void setSlot2(Weapon slot2) {
+		this.slot2 = slot2;
+	}
+
 }
