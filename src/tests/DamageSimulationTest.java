@@ -29,7 +29,7 @@ public class DamageSimulationTest {
 			for (MaterialType type : MaterialType.values()) {
 				System.out.println(type.name());
 				for (int i = 0; i < damageArray.length; i++) {
-					System.out.print(damageArray[i].damageSimulation(type, unarmored, 0.0) + " ");
+					System.out.print(damageArray[i].damageSimulation(type, unarmored, 0) + " ");
 				}
 				System.out.println("\n-----------");
 			}

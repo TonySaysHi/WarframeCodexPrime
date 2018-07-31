@@ -30,8 +30,8 @@ public void setDamage(ArrayList damage) {
 	this.damage = damage;
 }
 
-public double CalculateDamage(MaterialType materialType ,MaterialType armorType, double ArmorRating) throws MissingMaterialTypeException {
-	double temp = 0;
+public double calculateDamage(MaterialType materialType ,MaterialType armorType, float ArmorRating) throws MissingMaterialTypeException {
+	float temp = 0;
 	for(Damage e:damage) {
 		temp += e.damageSimulation(materialType, armorType, ArmorRating);
 	}

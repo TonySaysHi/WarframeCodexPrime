@@ -29,7 +29,7 @@ public class WeaponTest {
 	
 	@Test
 	public void CalculateDatDamage() throws MissingMaterialTypeException {
-		double tempD = Vectis_P.CalculateDamage(MaterialType.CLONED_FLESH, MaterialType.ALLOY, 200);
+		double tempD = Vectis_P.calculateDamage(MaterialType.CLONED_FLESH, MaterialType.ALLOY, 200);
 		System.out.println(tempD);
 	}
 }
