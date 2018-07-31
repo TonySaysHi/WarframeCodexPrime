@@ -1,4 +1,4 @@
-package weaponData;
+package exceptions;
 
 public class MissingMaterialTypeException extends Exception{
 

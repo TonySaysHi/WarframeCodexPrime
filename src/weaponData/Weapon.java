@@ -2,6 +2,7 @@ package weaponData;
 import java.util.ArrayList;
 
 import enemyData.MaterialType;
+import exceptions.MissingMaterialTypeException;
 
 public class Weapon {
 private String name;

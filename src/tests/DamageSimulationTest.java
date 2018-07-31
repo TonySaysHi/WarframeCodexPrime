@@ -4,9 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import enemyData.MaterialType;
+import exceptions.MissingMaterialTypeException;
 import weaponData.Damage;
 import weaponData.DamageType;
-import weaponData.MissingMaterialTypeException;
 
 public class DamageSimulationTest {
 	private Damage impactHit, punctureHit, slashHit, coldHit, electricHit, heatHit, toxinHit, blastHit, corrosiveHit,

@@ -2,6 +2,7 @@
 package weaponData;
 
 import enemyData.MaterialType;
+import exceptions.MissingMaterialTypeException;
 
 public class Damage {
 private DamageType type;
