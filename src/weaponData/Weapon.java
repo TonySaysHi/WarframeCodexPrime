@@ -11,4 +11,20 @@ public Weapon(String name, ArrayList damage) {
 	Damage = damage;
 }
 
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public ArrayList getDamage() {
+	return Damage;
+}
+
+public void setDamage(ArrayList damage) {
+	Damage = damage;
+}
+
 }
