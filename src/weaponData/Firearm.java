@@ -2,7 +2,7 @@ package weaponData;
 
 import java.util.ArrayList;
 
-public class Firearm extends Weapon{
+public class Firearm extends WeaponPlatform{
 	private double accuracy;
 	private String falloff;
 	private double fire_rate;

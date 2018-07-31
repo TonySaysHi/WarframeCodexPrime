@@ -2,7 +2,7 @@ package weaponData;
 
 import java.util.ArrayList;
 
-public class Melee extends Weapon{
+public class Melee extends WeaponPlatform{
 private double attack_speed;
 private double channeling_cost;
 private double channeling_dmg;

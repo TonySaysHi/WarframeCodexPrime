@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import enemyData.MaterialType;
 import exceptions.MissingMaterialTypeException;
 
-public class Weapon {
+public class WeaponPlatform {
 private String name;
 private ArrayList<Damage> damage;
 
-public Weapon(String name, ArrayList damage) {
+public WeaponPlatform(String name, ArrayList damage) {
 	super();
 	this.name = name;
 	this.damage = damage;
