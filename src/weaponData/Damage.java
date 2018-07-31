@@ -50,7 +50,6 @@ public double damageSimulation(MaterialType materialType, MaterialType armorType
 		
 		DM = ((HM)*(AM))/(1+((AR*(AM))/300));
 	} else DM = HM;
-	
 	return  damage*(DM);
 	
 	} else throw new MissingMaterialTypeException();
