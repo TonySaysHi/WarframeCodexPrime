@@ -31,10 +31,10 @@ public void setDamage(double damage) {
  * see http://warframe.wikia.com/wiki/Damage_2.0#Armored
  * 
  * Armor rating can be negative, and this is intended.
- * @return damage inflicted to a specific armor type.
+ * @return damage inflicted to a specific hitpoint and armor type combo.
  * @throws MissingMaterialTypeException 
  */
-public double DamageSimulation(MaterialType materialType, MaterialType armorType, double ArmorRating) throws MissingMaterialTypeException {
+public double damageSimulation(MaterialType materialType, MaterialType armorType, double ArmorRating) throws MissingMaterialTypeException {
 	
 	if (materialType != null) {
 	boolean Armored = (armorType != null);
@@ -49,7 +49,7 @@ public double DamageSimulation(MaterialType materialType, MaterialType armorType
 		DM = ((HM)*(AM))/(1+((AR*(AM))/300));
 	} else DM = HM;
 	
-	return  damage*(1+DM);
+	return  damage*(DM);
 	
 	} else throw new MissingMaterialTypeException();
 	
