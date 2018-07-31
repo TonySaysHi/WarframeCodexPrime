@@ -2,7 +2,7 @@ package weaponData;
 
 import java.util.ArrayList;
 
-public class SecondaryFireFirearm extends Weapon{
+public class SecondaryFireWeapon extends Weapon{
 	private double accuracy;
 	private String falloff;
 	private double fire_rate;
@@ -14,11 +14,11 @@ public class SecondaryFireFirearm extends Weapon{
 	private TriggerType trigger;
 	//PS = primary or secondary , true = primary  , false = secondary
 	private boolean ps;
-	private Firearm secondaryfire;
+	private Weapon secondaryfire;
 	
-	public SecondaryFireFirearm(String name, ArrayList damage, double accuracy, String falloff, double fire_rate,
+	public SecondaryFireWeapon(String name, ArrayList damage, double accuracy, String falloff, double fire_rate,
 			int magizine, boolean noise, double nbr_bullet, double punch_through, double reload, TriggerType trigger,
-			boolean ps, Firearm secondaryfire) {
+			boolean ps, Weapon secondaryfire) {
 		super(name, damage);
 		this.accuracy = accuracy;
 		this.falloff = falloff;
@@ -113,11 +113,11 @@ public class SecondaryFireFirearm extends Weapon{
 		this.ps = ps;
 	}
 
-	public Firearm getSecondaryfire() {
+	public Weapon getSecondaryfire() {
 		return secondaryfire;
 	}
 
-	public void setSecondaryfire(Firearm secondaryfire) {
+	public void setSecondaryfire(Weapon secondaryfire) {
 		this.secondaryfire = secondaryfire;
 	}
 	
