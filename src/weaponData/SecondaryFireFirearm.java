@@ -12,7 +12,7 @@ public class SecondaryFireFirearm extends Weapon{
 	private double punch_through;
 	private double reload;
 	private TriggerType trigger;
-	//PS = primary or secondary
+	//PS = primary or secondary , true = primary  , false = secondary
 	private boolean ps;
 	private Firearm secondaryfire;
 	
