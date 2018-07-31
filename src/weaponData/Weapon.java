@@ -1,14 +1,16 @@
 package weaponData;
 import java.util.ArrayList;
 
+import enemyData.MaterialType;
+
 public class Weapon {
 private String name;
-private ArrayList Damage;
+private ArrayList<Damage> damage;
 
 public Weapon(String name, ArrayList damage) {
 	super();
 	this.name = name;
-	Damage = damage;
+	this.damage = damage;
 }
 
 public String getName() {
@@ -20,11 +22,19 @@ public void setName(String name) {
 }
 
 public ArrayList getDamage() {
-	return Damage;
+	return damage;
 }
 
 public void setDamage(ArrayList damage) {
-	Damage = damage;
+	this.damage = damage;
 }
 
+public double CalculateDamage(MaterialType materialType ,MaterialType armorType, double ArmorRating) throws MissingMaterialTypeException {
+	double temp = 0;
+	for(Damage e:damage) {
+		temp += e.damageSimulation(materialType, armorType, ArmorRating);
+	}
+	return temp;
+	
+}
 }
