@@ -1,27 +1,45 @@
 package AbilityData;
 
 public class AbilityAttribute {
-private EffectType type;
-private double number;
+private String type;
+private String unit;
+private Modifier modifier;
 
-public AbilityAttribute(EffectType type, double number) {
+public AbilityAttribute(String type, Modifier modifier , String unit) {
 	this.type = type;
-	this.number = number;
+	this.modifier = modifier;
+	this.unit = unit;
 }
 
-public EffectType getType() {
+public String getUnit() {
+	return unit;
+}
+
+public void setUnit(String unit) {
+	this.unit = unit;
+}
+
+public Modifier getModifier() {
+	return modifier;
+}
+
+public void setModifier(Modifier modifier) {
+	this.modifier = modifier;
+}
+
+public String getType() {
 	return type;
 }
 
-public void setType(EffectType type) {
+public void setType(String type) {
 	this.type = type;
 }
 
-public double getNumber() {
-	return number;
+public Modifier getNumber() {
+	return modifier;
 }
 
-public void setNumber(double number) {
-	this.number = number;
+public void setNumber(Modifier modifier) {
+	this.modifier = modifier;
 }
 }

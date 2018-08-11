@@ -9,9 +9,9 @@ public class Ability {
 	private String description;
 	private double energyCost;
 	private ArrayList<AbilityAttribute> abilityData;
-	private Damage damage;
+	private ArrayList<Damage> damage;
 	
-	public Ability(String name ,String description, double energyCost, ArrayList<AbilityAttribute> abilityData, Damage damage) {
+	public Ability(String name ,String description, double energyCost, ArrayList<AbilityAttribute> abilityData, ArrayList<Damage> damage) {
 		this.name = name;
 		this.description = description;
 		this.energyCost = energyCost;
@@ -51,11 +51,11 @@ public class Ability {
 		this.abilityData = abilityData;
 	}
 
-	public Damage getDamage() {
+	public ArrayList<Damage> getDamage() {
 		return damage;
 	}
 
-	public void setDamage(Damage damage) {
+	public void setDamage(ArrayList<Damage> damage) {
 		this.damage = damage;
 	}
 
