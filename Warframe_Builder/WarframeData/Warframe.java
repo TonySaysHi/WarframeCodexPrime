@@ -1,5 +1,9 @@
 package WarframeData;
 
+import java.util.ArrayList;
+
+import AbilityData.Ability;
+
 public class Warframe {
 private double health;
 private double shield;
@@ -10,5 +14,11 @@ private double duration;
 private double efficiency;
 private double range;
 private double strenght;
+private ArrayList<Ability> abilityList ;
 
+public void UpdateAbilities() {
+	for (Ability e : abilityList) {
+		
+	}
+}
 }

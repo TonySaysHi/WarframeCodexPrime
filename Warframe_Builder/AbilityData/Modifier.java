@@ -26,4 +26,11 @@ public void setNumber(double number) {
 	this.number = number;
 }
 
+//modifie the number value of the modifier by checking the modifier type first
+public void updateScaling(String modifier_type , double scaling) {
+	if(modifier_type == this.modifier_type) {
+		this.number = this.number*scaling;
+	}
+}
+
 }

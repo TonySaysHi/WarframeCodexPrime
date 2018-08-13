@@ -58,5 +58,12 @@ public class Ability {
 	public void setDamage(ArrayList<Damage> damage) {
 		this.damage = damage;
 	}
+	
+	//change the value of ability attributes modifiers
+	public void UpdateAllModifiers(String modifier_type, double scaling) {
+		for(AbilityAttribute e : abilityData) {
+			e.getModifier().updateScaling(modifier_type, scaling);
+		}
+	}
 
 }
