@@ -61,8 +61,13 @@ public class Ability {
 	
 	//change the value of ability attributes modifiers
 	public void UpdateAllModifiers(String modifier_type, double scaling) {
+		if(modifier_type == "strenght") {
+			for(Damage e : damage) {
+				e.setDamage(e.getDamage() * scaling/100);
+			}
+		} else
 		for(AbilityAttribute e : abilityData) {
-			e.getModifier().updateScaling(modifier_type, scaling);
+			e.getModifier().updateScaling(modifier_type, scaling/100);
 		}
 	}
 
