@@ -18,7 +18,10 @@ private ArrayList<Ability> abilityList ;
 
 public void UpdateAbilities() {
 	for (Ability e : abilityList) {
-		
+		e.UpdateAllModifiers("range", range);
+		e.UpdateAllModifiers("efficiency", efficiency);
+		e.UpdateAllModifiers("strenght", strenght);
+		e.UpdateAllModifiers("duration", duration);
 	}
 }
 }
