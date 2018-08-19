@@ -2,6 +2,8 @@ package AbilityData;
 
 import java.util.ArrayList;
 
+import enemyData.MaterialType;
+import exceptions.MissingMaterialTypeException;
 import weaponData.Damage;
 
 public class Ability {
@@ -69,6 +71,15 @@ public class Ability {
 		for(AbilityAttribute e : abilityData) {
 			e.getModifier().updateScaling(modifier_type, scaling/100);
 		}
+	}
+	
+	public double calculateDamage(MaterialType materialType ,MaterialType armorType, float ArmorRating) throws MissingMaterialTypeException {
+		float temp = 0;
+		for(Damage e:damage) {
+			temp += e.damageSimulation(materialType, armorType, ArmorRating);
+		}
+		return temp;
+		
 	}
 
 }
