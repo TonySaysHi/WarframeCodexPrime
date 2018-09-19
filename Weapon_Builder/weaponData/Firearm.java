@@ -12,6 +12,7 @@ public class Firearm extends Weapon{
 	private double punch_through;
 	private double reload;
 	private TriggerType trigger;
+	//private int bulletTime;
 	//PS = primary or secondary , true = primary , false = secondary
 	private boolean ps;
 	
@@ -29,6 +30,8 @@ public class Firearm extends Weapon{
 		this.trigger = trigger;
 		this.ps = ps;
 	}
+	
+	
 
 	public double getAccuracy() {
 		return accuracy;
